@@ -22,6 +22,10 @@
       .logo {
         width: 1.4375rem;
       }
+
+      .collapseMenuItem img {
+        transform: rotate(180deg);
+      }
     }
   }
 }
@@ -137,5 +141,10 @@
 
   @media (min-width: breakpoint.$desktop) {
     display: flex;
+
+    img {
+      transform: rotate(0deg);
+      transition: transform 300ms;
+    }
   }
 }
